@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.opening h1 {
+    font-size: 3rem;
+    animation: sparkle 2s infinite alternate;
+}
+
+@keyframes sparkle {
+    0% {color: white;}
+    100% {color: gold;}
+}
+
+#passwordScreen {
+    background: #222;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 100px auto;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+
+nav a {
+    color: gold;
+    margin: 10px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Golu ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Password Protection -->
+    <div id="passwordScreen">
+        <h2>Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Enter Password">
+        <button onclick="checkPassword()">Unlock</button>
+        <p id="errorMessage"></p>
+    </div>
+
+    <!-- Main Content (Hidden Until Password is Correct) -->
+    <div id="mainContent" style="display: none;">
+
+        <!-- Opening Animation -->
+        <div class="opening">
+            <h1 id="nameAnimation">Anushka ❤️</h1>
+        </div>
+
+        <!-- Music Player -->
+        <audio autoplay loop>
+            <source src="surili_ankhiyon_wale.mp3" type="audio/mp3">
+        </audio>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#story">Our Story</a>
+            <a href="#love">Why I Love You</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#message">Message for You</a>
+        </nav>
+
+        <!-- Our Story -->
+        <section id="story">
+            <h2>Our Story</h2>
+            <p>From the moment we met, my heart knew you were special...</p>
+        </section>
+
+        <!-- Why I Love You (Click to Reveal) -->
+        <section id="love">
+            <h2>Why I Love You</h2>
+            <button onclick="revealLove()">Click to Reveal</button>
+            <p id="loveMessage" style="display: none;">Because you are my everything, Golu ❤️</p>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery">
+            <h2>Our Beautiful Moments</h2>
+            <img src="image1.jpg" alt="Moment 1">
+            <img src="image2.jpg" alt="Moment 2">
+        </section>
+
+        <!-- Special Message -->
+        <section id="message">
+            <h2>For My Golu</h2>
+            <p>Every moment with you is a blessing. I love you forever. ❤️</p>
+        </section>
+
+        <!-- Reply Form -->
+        <section id="reply">
+            <h2>Send Me a Message</h2>
+            <textarea id="response" placeholder="Write your message here..."></textarea>
+            <button onclick="sendMessage()">Send</button>
+        </section>
+
+        <!-- Closing Message -->
+        <footer>
+            <p>Golu, you are my world. I love you more than words can say. ❤️</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
